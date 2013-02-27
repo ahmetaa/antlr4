@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-master</artifactId>
-        <version>4.0.1-SNAPSHOT</version>
+        <version>4.0.1-z3</version>
         <relativePath>../..</relativePath>
     </parent>
 
@@ -14,6 +14,21 @@
 
     <name>ANTLR 4 Runtime</name>
     <description>The ANTLR 4 Runtime</description>
+
+    <distributionManagement>
+        <repository>
+            <id>local-repo-clone</id>
+            <url>file://${project.basedir}/../maven-repo</url>
+        </repository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>ahmetaa-repo</id>
+            <name>ahmetaa Maven Repo on Github</name>
+            <url>https://raw.github.com/ahmetaa/../maven-repo/master</url>
+        </repository>
+    </repositories>
 
     <dependencies>
         <dependency>
