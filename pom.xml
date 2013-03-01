@@ -1,16 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-<!--    <parent>
+    <parent>
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>7</version>
-    </parent>-->
+    </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.antlr</groupId>
-    <artifactId>antlr4-master</artifactId>
-    <version>4.0.1-z3</version>
+    <groupId>antlr4-z3</groupId>
+    <artifactId>antlr4-z3</artifactId>
+    <version>4.0.1z</version>
     <packaging>pom</packaging>
 
     <name>ANTLR 4</name>
@@ -25,17 +25,9 @@
     <distributionManagement>
         <repository>
             <id>local-repo-clone</id>
-            <url>file://${project.basedir}/../maven-repo</url>
+            <url>file:///home/kodlab/projects/maven-repo</url>
         </repository>
     </distributionManagement>
-
-    <repositories>
-        <repository>
-            <id>ahmetaa-repo</id>
-            <name>ahmetaa Maven Repo on Github</name>
-            <url>https://raw.github.com/ahmetaa/../maven-repo/master</url>
-        </repository>
-    </repositories>
 
     <licenses>
         <license>
@@ -67,8 +59,10 @@
 
     <modules>
         <module>runtime/Java</module>
+<!--
         <module>tool</module>
         <module>antlr4-maven-plugin</module>
+-->
     </modules>
 
     <properties>
